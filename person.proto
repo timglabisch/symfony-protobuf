@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package Proto;
+
+message Friend {
+  string name = 1;
+}
+
+message Person {
+  string name = 1;
+  int32 id = 2;
+  string email = 3;
+  Friend friend = 4;
+}
